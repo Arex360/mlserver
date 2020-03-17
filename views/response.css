@@ -1,0 +1,64 @@
+.menu{
+    position: absolute;
+    right: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 40px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+.option{
+    position: absolute;
+    left: 97%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+    
+}
+.hlink{
+    display: none;
+}
+.menu:hover .hlink{
+    position: absolute;
+    display: block;
+    transform: rotate(0deg);
+    background: rgba(18, 241, 252, 0.5);
+    left: 80%;
+}
+.menu:hover .hlink ul li{
+    list-style: none;
+}
+.menu:hover .hlink ul li .item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.i1{
+    position: relative;
+    height: 10%;
+    margin-bottom: 4px;
+    width: 20px;
+    background: white;
+    transition: 0.7s;
+}
+.i2{
+    position: relative;
+    height: 10%;
+    margin-bottom: 4px;
+    width: 30px;
+    background: white;
+    transition: 0.7s;
+}
+.menu:hover .i1{
+    width: 30px;
+}
+
+@media screen and (max-width: 1450px){
+    .link{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+.wall{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.wall .img{
+    width: 100%;
+    height: 80%;
+}
+.laptop{
+    position: absolute;
+    top: 24%;
+    width: 40%;
+    left: 30%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 2%;
+}
+.nbar{
+    display: flex;
+}
+.logo img{
+    width: 40%;
+    margin-left: 30px;
+}
+.link{
+    position: relative;
+    width: 100%;
+    left: 17%;
+}
+.link ul{
+    list-style: none;
+    display: flex;
+}
+.link ul li .item a{
+   text-decoration: none;
+   color: white;
+   font-size: 22px;
+}
+.item{
+    position: relative;
+    width: 200px;
+    height: 32px;
+    transition: 2s;
+    margin-left: 15px;
+}
+.item a{
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background: white;
+    align-content: center;
+    transition: 0.5s;
+}
+.item:hover .line{
+    width: 100%;
+}
+.wall2{
+    position: relative;
+    width: 40%;
+    left: 35%;
+    height: 25%;
+}
+.wall2 img{
+    width: 70%;
+}
+.link{
+    color: black !important;
+}
+.new{
+    background: black !important;
+}
+#intro{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.net{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    left: 65%;
+}
+.neuron{
+    width: 100%;
+    height: 100%;
+}
+.head{
+    position: relative;
+    margin-bottom: 40px;
+    width: 50%;
+    left: 4%;
+    top: 3%;
+}
+#mlh{
+    width: 50%;
+    color: #4287f5;
+    font-weight: 1000;
+    padding-bottom: 7px;
+    border-bottom: #4287f5 solid 1px;
+}
+.def{
+    margin-top: 8px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+.def ul{
+    position: relative;
+    margin-top: 4px;
+    left: 4%;
+}
+.pbar{
+    width: 0%;
+    height: 8%;
+    background: white;
+    transition: 2s;
+}
+nav:hover .pbar{
+    width: 100%;
+}
+.mbar{
+    background: black !important;
+}
