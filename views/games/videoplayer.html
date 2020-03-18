@@ -9,17 +9,25 @@
 <body>
     <div class="main">
         <div class="vid">
+            <div class="setID">
+                <input class="sid" placeholder="Enter the ID of the video" type="text" name="" id=""><button class="set">Set ID</button>
+            </div>
+            <div class="current">
+                <h1 class="cid">No Video selected</h1>
+            </div>
             <div class="pane">
-                <video src="video.mp4" autoplay="true" controls class="video"></video>
+                <video src="" autoplay="true" controls class="video"></video>
             </div>
             <div class="upload">
                 <img src="cam.png" alt="">
                 <input type="file" placeholder="Enter Video Path from the directory" class="address">
     
-                <button class="upv">Upload</button>
+                <button class="upv">Play</button>
                 <div class="progress">
-                    <div class="fill"></div>
-                    <label class="perc" for="">10</label>]-=[]
+                    <div class="fill"><label for="" class="perc"></label></div>
+                </div>
+                <div class="detail">
+                    <label class="vID" for="">Video ID:</label>
                 </div>
             </div>
         </div>

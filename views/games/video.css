@@ -9,7 +9,7 @@ body{
 }
 .c1,.c2{
     position: relative;
-    display: none;
+    display: block;
     width: 100%;
     height: 50%;
     transition: 0.7s;
@@ -17,12 +17,13 @@ body{
 }
 .vid{
     position: relative;
+    display: none;
     width: 100%;
     height: 700px;
 }
 .middle{
     position: absolute;
-    display: none;
+    display: block;
     width: 200px;
     height: 200px;
     transition: 0.7s;
@@ -134,4 +135,37 @@ body{
     width: 0%;
     height: 100%;
     background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);;
+}
+.fill .perc{
+    position: relative;
+    transition: 0.5%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+}
+.detail{
+    margin-top: 30px;
+}
+.setID{
+    position: relative;
+    left: 72%;
+    top: 15%;
+    margin-top: 10px;
+}
+.set{
+    outline: none;
+    border: none;
+    background: #4facfe;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding: 4px;
+}
+.current{
+    position: absolute;
+    left: 15%;
+    top: 12%;
 }
