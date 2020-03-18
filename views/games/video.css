@@ -77,3 +77,49 @@ body{
     width: 100%;
     height: 100%;
 }
+.upload{
+    position: relative;
+    top: 20%;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.upload img{
+    width: 60px;
+}
+.upload .address {
+    position: relative;
+    width: 70%;
+    margin-left: 6px;
+    height: 25px;
+    top: -20px;
+    border: none;
+    color: #333;
+    border-bottom: #4facfe solid 2px;
+    outline: none;
+}
+.upv{
+    position: relative;
+    top: -10px;
+    outline: none;
+    border: none;
+    background: #4facfe;
+    margin-left: 10px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.upv:hover{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}

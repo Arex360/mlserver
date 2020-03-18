@@ -5,6 +5,7 @@ var menu = document.querySelector('.menu')
 var link = document.querySelector('.Link')
 var mlink = document.querySelector('.mlink')
 var add = document.querySelector('.t1')
+
 window.addEventListener('resize',()=>{
     if(window.innerWidth > 1400 ){
         add.classList.add('mlink')

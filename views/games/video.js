@@ -4,6 +4,14 @@ var c2 = document.querySelector('.c2')
 var hover = document.querySelector('.play')
 var vSection = document.querySelector('.vid')
 var video = document.querySelector('.video')
+var btn = document.querySelector('.upv')
+var addr = document.querySelector('.address')
+var URL = ''
+var store = firebase.storage();
+var ref = store.ref()
+
+
+
 var selected = false
 sw.addEventListener('mouseover',()=>{
     if(!selected){
@@ -33,5 +41,29 @@ sw.addEventListener('click',()=>{
         vSection.style.display = 'none'
         sw.style.left = '50%'
         hover.innerHTML = "Let's play"
+    }
+})
+btn.addEventListener('click',()=>{
+    let path = addr.value
+    video.src = path
+})
+addr.addEventListener('change',(event)=>{
+    console.log(event.target.files[0].name)
+    for(let i=0;i <event.target.files.length;i++){
+        let imgFile = event.target.files[i]
+        let Ref = firebase.storage().ref("videos/"+imgFile.name)
+        let task = Ref.put(imgFile)
+        console.log("being uploaded..")
+        task.on('state_changed',p=>{
+            let progress = p.bytesTransferred / p.totalBytes * 100
+            console.log(progress)
+            if(progress == 100){
+                firebase.storage().ref().child("videos/"+imgFile.name).getDownloadURL().then(function(downloadURL) {
+                    URL = downloadURL
+                    video.src = URL
+        });
+            }
+        })
+        
     }
 })
