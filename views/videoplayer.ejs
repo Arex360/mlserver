@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="main">
+        <div class="vid">
+           
+        <div class="setID">
+            <input class="sid" placeholder="Enter the ID of the video" type="text" name="" id="">
+            <button class="set">Set ID</button>
+        </div>
+        <div class="current">
+            <h1 class="cid">No Video selected</h1>
+        </div> 
+        <div class="pane">
+            <video src="" autoplay="true" controls class="video"></video>
+        </div>
+        <div class="upload">
+            <img src="cam.png" alt="">
+            <input type="file" placeholder="Enter Video Path from the directory" class="address">
+
+            <button class="upv">Play</button>
+            <div class="progress">
+                <div class="fill"><label for="" class="perc"></label></div>
+            </div>
+            <div class="detail">
+                <label class="vID" for="">Video ID:</label>
+            </div>
+        </div>
+
+        </div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="middle">
+            <img src="movie.png" alt="">
+            <label class="play" for="">Let's Play</label>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-storage.js"></script>
+    <script>
+
+        var firebaseConfig = {
+          apiKey: "AIzaSyD3cRNuHr14As7umCb6kM0md4wD8RbzNis",
+          authDomain: "hciserver.firebaseapp.com",
+          databaseURL: "https://hciserver.firebaseio.com",
+          projectId: "hciserver",
+          storageBucket: "hciserver.appspot.com",
+          messagingSenderId: "944730393000",
+          appId: "1:944730393000:web:7d854cbd4160d89730359d",
+          measurementId: "G-R66DV1CJVQ"
+        };
+       
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+    <script src="video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="gesture.js"></script>  
+    
+
+</body>
+</html>

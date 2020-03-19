@@ -6,7 +6,7 @@ var vSection = document.querySelector('.vid')
 var video = document.querySelector('.video')
 var btn = document.querySelector('.upv')
 var addr = document.querySelector('.address')
-var fill = document.querySelector('.fill')
+var fillx = document.querySelector('.fill')
 var perc = document.querySelector('.perc')
 var vidId = document.querySelector('.vID')
 var sid = document.querySelector('.sid')
@@ -23,7 +23,6 @@ var filename = ''
 var ref = store.ref()
 var videoList = []
 var selected = false
-
 setId.addEventListener('click',()=>{
     if(sid.value > id){
         alert('Video Not Found')
@@ -92,7 +91,7 @@ addr.addEventListener('change',(event)=>{
             let status = Math.floor(progress)
             console.log(status)
             perc.innerHTML = status + '%'
-            fill.style.width = status + '%'
+            fillx.style.width = status + '%'
             if(progress == 100){
                 isUploaded = true
                 vidId.innerHTML = 'Video ID: ' + filename.toString()

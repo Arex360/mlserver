@@ -7,9 +7,15 @@ body{
     width: 100%;
     height: 100vh;
 }
+.setID{
+    position: relative;
+    width: 10%;
+    top: 15%;
+    left: 75%;
+}
 .c1,.c2{
     position: relative;
-    display: block;
+    display: none;
     width: 100%;
     height: 50%;
     transition: 0.7s;
@@ -17,13 +23,13 @@ body{
 }
 .vid{
     position: relative;
-    display: none;
+    display: block;
     width: 100%;
     height: 700px;
 }
 .middle{
     position: absolute;
-    display: block;
+    display: none;
     width: 200px;
     height: 200px;
     transition: 0.7s;
@@ -80,6 +86,7 @@ body{
 }
 .upload{
     position: relative;
+   
     top: 20%;
     margin-left: 300px;
     align-items: center;
@@ -148,12 +155,7 @@ body{
 .detail{
     margin-top: 30px;
 }
-.setID{
-    position: relative;
-    left: 72%;
-    top: 15%;
-    margin-top: 10px;
-}
+
 .set{
     outline: none;
     border: none;

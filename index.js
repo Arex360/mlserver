@@ -6,8 +6,8 @@ app.use(express.static('views'))
 app.get('/',(req,res)=>{
     res.render('index.ejs')
 })
-app.get('/another',(req,res)=>{
-    res.send('ss')
+app.get('/player',(req,res)=>{
+    res.render('videoplayer.ejs')
 })
 app.listen(3000,()=>{
     console.log('server started')
