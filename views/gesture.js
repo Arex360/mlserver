@@ -1,4 +1,6 @@
 var testVideo = document.querySelector('.video')
+var selected = false
+var pause = false
 var stats = document.querySelector('.st')
 var ai;
 var video1;
@@ -17,7 +19,7 @@ var Predict = (err,Result)=>{
     if(Decison == 'play'){
         console.log('playing')
         testVideo.play()
-    }else if(Decison == 'stop'){
+    }else if(Decison == 'stop' ){
         console.log('Stopping')
         testVideo.pause()
     }else if(Decison == 'reverse'){

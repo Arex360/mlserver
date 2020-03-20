@@ -15,7 +15,7 @@ body{
 }
 .c1,.c2{
     position: relative;
-    display: none;
+    display: block;
     width: 100%;
     height: 50%;
     transition: 0.7s;
@@ -23,13 +23,13 @@ body{
 }
 .vid{
     position: relative;
-    display: block;
+    display: none;
     width: 100%;
     height: 700px;
 }
 .middle{
     position: absolute;
-    display: none;
+    display: block;
     width: 200px;
     height: 200px;
     transition: 0.7s;
