@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+    background-blend-mode: multiply,multiply;
+}
+
+#Scale{
+    position: relative;
+}
+.heading{
+    color: white;
+    font-size: 30px;
+}
+.input{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+label{
+    color: white;
+    margin-right: 12px;
+}
+main{
+    position: absolute;
+    width: 13%;
+    display: block;
+    right: 0px;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+    background-blend-mode: multiply,multiply;
+}
+#Boxes{
+    margin-left: 10px;
+}

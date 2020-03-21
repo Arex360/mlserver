@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+   <style>
+       canvas{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+   </style>
+<body>
+     <div class="main">
+         <nav>
+            <Section id="Scale">
+                <h1 class="heading">
+                    Transform
+                </h1>
+                <div class="slider">
+                     <div class="input">
+                         <label for="">X</label>
+                        <input type="range" min="0" id="XT">
+                     </div>
+                     <div class="input">
+                         <label for="">Y</label>
+                        <input type="range" min="0" id="YT">
+                     </div>
+                 </div>
+            </Section>
+            <Section id="Resize">
+                <h1 class="heading">
+                    Scale
+                </h1>
+                <div class="slider">
+                     <div class="input">
+                         <label for="">X</label>
+                        <input type="range" min="0" id="XS">
+                     </div>
+                     <div class="input">
+                         <label for="">Y</label>
+                        <input type="range" min="0" id="YS">
+                     </div>
+                 </div>
+            </Section>
+            <Section id="RGB">
+                <h1 class="heading">
+                    RGB Scale
+                </h1>
+                <div class="slider">
+                     <div class="input">
+                         <label for="">R</label>
+                        <input type="range" min="0" max="255" id="R">
+                     </div>
+                     <div class="input">
+                         <label for="">G</label>
+                        <input type="range" min="0" max="255" id="G">
+                     </div>
+                     <div class="input">
+                        <label for="">B</label>
+                       <input type="range" min="0" max="255" id="B">
+                    </div>
+                 </div>
+            </Section>
+         </nav>
+         <main>
+            <Section id="Boxes">
+                <h1 class="heading">
+                    No. Boxes
+                </h1>
+                <div class="slider">
+                     <input id="no" type="text">
+                     <button id="nob">Add</button>
+                 </div>
+            </Section>
+         </main>
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="index.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>
