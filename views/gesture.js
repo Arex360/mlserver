@@ -5,6 +5,9 @@ var stats = document.querySelector('.st')
 var ai;
 var video1;
 var Decison;
+var uploaded = false
+var pImage;
+var res;
 var setup = ()=>{
     video1 = createCapture(VIDEO)
     ai = ml5.imageClassifier('model.json',video1,()=>{
@@ -14,7 +17,15 @@ var setup = ()=>{
     video1.hide()
 }
 var Predict = (err,Result)=>{
-    console.log(Result[0].label)
+    if(!uploaded){
+       alert('ss')
+       pImage = createImg(res, ()=>{
+           console.log('done')
+       })
+       uploaded = true
+       ai.predict(Predict)
+    }else{
+        console.log(Result[0].label)
     Decison = Result[0].label
     if(Decison == 'play'){
         console.log('playing')
@@ -28,4 +39,5 @@ var Predict = (err,Result)=>{
         console.log('forwarding')
     }
     ai.predict(Predict)
+    }
 }
